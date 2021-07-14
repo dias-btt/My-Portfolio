@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="topnav" id="dropdownClick">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+        <li class="topnav-right"><a href="#singin">Sign In</a></li>
+        <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776; </a></li>
+      </ul>
+    </nav>
+
+<!--Section 1. Navigation -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div>
+            <div class="large"> Saiynov Dias </div>
+            <div class="small"> Hello, I am a second year student who wants to become a software engineer </div>
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="large"> Wanna know a little bit more about me?</div>
+        </div>
+      </div>
+    </div>
+
+<!--Section 2. My Personal Information -->
+
+    <div class="container-2">
+      <div class="large"> Who am I? </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="box">
+            <label> Personal Information </label>
+            <ul class="list">
+              <li> Full name: Dias Saiynov</li>
+              <li> Birth date: 06.12.2001 </li>
+              <li> Email: dias.saiynov@nu.edu.kz </li>
+              <li> Phone: +7 747 580 55 02</li>
+              <li> LinkedIn: @dsaiynov </li>
+          </ul>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <label> Skills </label>
+            <ul class="list">
+              <li>HTML5, CSS3 </li>
+              <li>Python </li>
+              <li>C/C++ </li>
+              <li>Data Structures </li>
+              <li>Algorithms </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <label> Extracuricullar </label>
+            <ul class="list">
+              <li> Human Resources at AIESEC </li>
+              <li> Math tutor </li>
+              <li> Event manager at Volunteers Club</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Section 3. My work experience -->
+
+    <div class="container-3">
+      <div class="large"> What did I do? </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="box">
+            <label> OQU Education</label>
+            <div class="list"> I worked as a Math teacher for 13-15 aged students. My responsibility was to prepare them for admission to Kazakh Turkish Lyceum and Nazarbayev Intelectual School</div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <label> Abay Academy </label>
+            <div class="list"> I worked as a tutor of trial lessons. My job was to give a pre-lesson for 3-10 grade students and write a feedback about each of them </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="box">
+            <label> Tutoring </label>
+            <div class="list"> I have been tutoring Math since 2019. I prepared kids for school, 8-9 grade students for college and 10-11 grade students for university admission </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Section 4. My photos -->
+  <div class="container-3">
+    <div class="large"> You'll like this </div>
+    <div class="row">
+      <div class="col-3">
+        <div class="box">
+          <label> Rock Paper Scissors </label>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="box">
+          <label> My second project </label>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="box">
+          <label> My third project </label>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="box">
+          <label> My forth project </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function dropdownMenu(){
+      var x = document.getElementById("dropdownClick");
+      if(x.className === "topnav"){
+        x.className += " responsive";
+      } else{
+        x.className = "topnav";
+      }
+    }
+  </script>
+  </body>
+</html>
